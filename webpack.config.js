@@ -46,15 +46,17 @@ module.exports = [{
     // publicPath:
   },
   module: {
-    rules: [{
-        test: /\.js$/,
-        use: [{
-          loader: 'babel-loader',
-          options: {
-            presets: ['es2015']
-          }
-        }]
-      }, {
+    rules: [
+      // {
+      //   test: /\.js$/,
+      //   use: [{
+      //     loader: 'babel-loader',
+      //     options: {
+      //       presets: ['es2015']
+      //     }
+      //   }]
+      // },
+      {
         test: /\.html$/,
         use: ['html-loader']
       }, {
