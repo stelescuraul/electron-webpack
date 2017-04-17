@@ -17,7 +17,6 @@ export default class Main {
     const {width, height} = screen.getPrimaryDisplay().workAreaSize
     Main.mainWindow =
       new Main.BrowserWindow({ width, height })
-      console.log(resolve(__dirname))
     Main.mainWindow
       .loadURL('file://' + __dirname + '/index.html');
     Main.mainWindow.on('closed', Main.onClose);
